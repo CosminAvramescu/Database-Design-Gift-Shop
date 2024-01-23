@@ -1,5 +1,6 @@
 # Gift-Shop-Database-Design
 Avramescu Cosmin-Alexandru 344C3
+![diagram](https://i.imgur.com/wBDVjf7.png)
 
 Software necesar pentru rularea aplicatiei:
 Client Oracle
