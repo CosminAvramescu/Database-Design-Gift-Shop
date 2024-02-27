@@ -3,14 +3,14 @@
 ![oauth](https://i.imgur.com/wBDVjf7.png)
 
 
-    Database design for an online Gift Shop. 
-    The database is populated with data with some scripts.
+        Database design for an online Gift Shop. 
+    The database is populated with data using PL/SQL scripts.
     That data is then displayed using 2 methods:
         - Microsoft PowerBI
         - Python script
     
 
-    The main.py calls stored procedures and displays text results with tabulete library. 
+    The main.py calls stored procedures and displays text results using tabulete library. 
     For visual reports to analyze data, PowerBI was used.
 
 
