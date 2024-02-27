@@ -2,12 +2,16 @@
 # ABOUT THE PROJECT
 ![oauth](https://i.imgur.com/wBDVjf7.png)
 
-        Software necesar pentru rularea aplicatiei:
-    Client Oracle
-    SQL Developer
 
-        Fisierul python apeleaza procedurile stocate si afiseaza rezultate text. 
-        Pentru grafice, am folosit PowerBI.
+    Database design for an online Gift Shop. 
+    The database is populated with data with some scripts.
+    That data is then displayed using 2 methods:
+        - Microsoft PowerBI
+        - Python script
+    
+
+    The main.py calls stored procedures and displays text results with tabulete library. 
+    For visual reports to analyze data, PowerBI was used.
 
 
 ### Built With
@@ -26,15 +30,27 @@
    git clone https://github.com/CosminAvramescu/Database-Design-Gift-Shop.git
    ```
 
+2. Install Oracle Database, Oracle Client and SQL Developer
+
+3. Install Python and cx_Oracle library
+   ```sh
+   pip install cx_Oracle
+   ```
+ 
+4. Install PowerBI
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-1. Se stocheaza package-ul pck_gift_shop in baza de date prin intermediul SQL Developer. Se apasa New Connection, se introduc datele
-my-oracle-db, system, parolaAiaPuternic4, XE, se apasa Test, Save, Connect.
-2. Se da copy-paste la scripturile sql in SQL Developer, intai la create.sql, apoi la insert_data.sql si commit din butonul de sus cu bifa verde.
-3. Din panoul din stanga al SQL Developer, de la Packages, se adauga un pachet nou. Se introduc pe rand, copy-paste, din fisierul pck_gift_shop.sql, crearea antetului pachetului, apoi body-ul pachetului (sunt despartite de o linie comentata) si dupa fiecare se compileaza (butonul cu rotitele gri) si in final se da commit.
-4. Se ruleaza comanda python main.py. Se vor afisa rezultatele celor 3 proceduri interogate.
+1. Open SQL Developer. Click New Connection, enter the data:
+	    my-oracle-db, username, password, SID; then press Test, Save, Connect.
+2. Copy-paste the sql scripts into SQL Developer, first create.sql, then insert_data.sql and commit 
+    from the top button with the green tick.
+3. From the left pane of SQL Developer, under Packages, add a new package. Copy-paste from the 
+    pck_gift_shop.sql file, create the package header, then the package body (separated by a 
+    commented line in my file) and after each one, compile (the button with the grey wheels) and finally commit.
+4. Run the "python main.py" command. The results of the 3 queried procedures will be displayed.
 
 
 <!-- CONTRIBUTING -->
@@ -70,8 +86,7 @@ Project Link: [https://github.com/CosminAvramescu/Database-Design-Gift-Shop)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [rpcgen](https://docs.oracle.com/cd/E19683-01/816-1435/rpcgenpguide-21470/index.html)
-* [OAuth](https://www.soapui.org/docs/oauth1/oauth1-overview/)
+* [Python with cx_Oracle](https://oracle.github.io/python-cx_Oracle/samples/tutorial/Python-and-Oracle-Database-Scripting-for-the-Future.html)
 
 
 
